@@ -103,6 +103,13 @@ local Window = Rayfield:CreateWindow({
     end,
  })
 
+ local Button = ArsenalTab:CreateButton({
+    Name = "Bolt hub v3",
+    Callback = function()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/41f7d88bf584cfbb05c0f507eda3a130.lua"))()
+    end,
+ })
+
  local Button = DahoodTab:CreateButton({
     Name = "Spacex gui",
     Callback = function()
@@ -113,7 +120,7 @@ local Window = Rayfield:CreateWindow({
  local Button = DahoodTab:CreateButton({
     Name = "Mangox gui",
     Callback = function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/rogelioajax/lua/main/MangoHub', true))();
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/rogelioajax/lua/main/MangoHub', true))()
     end,
  })
 
