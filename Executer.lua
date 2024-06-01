@@ -117,6 +117,12 @@ local Window = Rayfield:CreateWindow({
     end,
  })
 
+ local Button = DahoodTab:CreateButton({
+    Name = "Agent gui" = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/mrhackerman35297/AgentCC/main/Launch.lua"))()
+    end,
+ })
+
  local Button = PetTab:CreateButton({
     Name = "Redz hub",
     Callback = function()
@@ -130,3 +136,5 @@ local Window = Rayfield:CreateWindow({
     loadstring(game:HttpGet('https://raw.githubusercontent.com/not-manav/AutofarmPS99/main/PS99AUTOFARM.txt'))()
     end,
  })
+
+ 
