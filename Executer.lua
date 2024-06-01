@@ -118,7 +118,8 @@ local Window = Rayfield:CreateWindow({
  })
 
  local Button = DahoodTab:CreateButton({
-    Name = "Agent gui" = function()
+    Name = "Agent gui",
+    Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/mrhackerman35297/AgentCC/main/Launch.lua"))()
     end,
  })
