@@ -26,10 +26,11 @@ local Window = Rayfield:CreateWindow({
     }
  })
 
- local MainTab = Window:CreateTab("Basic", nill) -- Title, Imagea
- local JailbreakTab = Window:CreateTab("Jailbreak", nill) -- Title, Imagea
- local ArsenalTab = Window:CreateTab("Arsenal", nill) -- Title, Imagea
- local DahoodTab = Window:CreateTab("Da hood", nill) -- Title, Imagea
+ local MainTab = Window:CreateTab("Basic 😐", nill) -- Title, Imagea
+ local JailbreakTab = Window:CreateTab("Jailbreak 🥷", nill) -- Title, Imagea
+ local ArsenalTab = Window:CreateTab("Arsenal 🔫", nill) -- Title, Imagea
+ local DahoodTab = Window:CreateTab("Da hood 🏠", nill) -- Title, Imagea
+ local PetTab = Window:CreateTab("Pet sim 99 🐈", nill) -- Title, Imagea
 
  Rayfield:Notify({
     Title = "Execution complete",
@@ -88,6 +89,20 @@ local Window = Rayfield:CreateWindow({
     end,
  })
 
+ local Button = ArsenalTab:CreateButton({
+    Name = "Lt hub",
+    Callback = function()
+    loadstring(game:HttpGet("http://bin.shortbin.eu:8080/raw/XBkUJpZcPi",true))()
+    end,
+ })
+
+ local Button = ArsenalTab:CreateButton({
+    Name = "Tbao hub",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/ArsenalTbaoHubNew"))()
+    end,
+ })
+
  local Button = DahoodTab:CreateButton({
     Name = "Spacex gui",
     Callback = function()
@@ -99,5 +114,19 @@ local Window = Rayfield:CreateWindow({
     Name = "Mangox gui",
     Callback = function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/rogelioajax/lua/main/MangoHub', true))();
+    end,
+ })
+
+ local Button = PetTab:CreateButton({
+    Name = "Redz hub",
+    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/PetSimulator99/main/redz9999.lua"))()
+    end,
+ })
+
+ local Button = PetTab:CreateButton({
+    Name = "Genric autofarm",
+    Callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/not-manav/AutofarmPS99/main/PS99AUTOFARM.txt'))()
     end,
  })
