@@ -55,6 +55,13 @@ local Window = Rayfield:CreateWindow({
  })
 
  local Button = MainTab:CreateButton({
+    Name = "Moon hub OP",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/LwQkm563"))()
+    end,
+ })
+
+ local Button = MainTab:CreateButton({
     Name = "Trolling gui",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/sinret/rbxscript.com-scripts-reuploads-/main/ckid", true))()
